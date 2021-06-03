@@ -1,0 +1,14 @@
+{
+  "name": "docker_",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docker-compose-down": "docker-compose -f './docker-compose.yml' down",
+    "docker-compose-up": "docker-compose -f './docker-compose.yml' up -d --build app",
+    "docker": "npm run docker-compose-down; npm run docker-compose-up; docker-compose logs -f app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
